@@ -1,0 +1,171 @@
+use railway;
+
+db.routes.insert({
+    name: "main-line",
+    route: [
+        { name: "Guwahati", fair: 0 },
+        { name: "Dimapur", fair: 100 },
+        { name: "Dibrugarh", fair: 200 },
+        { name: "Jorhat", fair: 300 },
+        { name: "Silchar", fair: 400 },
+        { name: "Agartala", fair: 500 },
+        { name: "Bhubaneswar", fair: 600 },
+        { name: "Visakhapatnam", fair: 700 },
+        { name: "Vijayawada", fair: 800 },
+        { name: "Warangal", fair: 900 },
+        { name: "Secunderabad", fair: 1000 },
+        { name: "Hyderabad", fair: 1100 }
+    ]
+});
+
+
+db.routes.insert({
+    name: "matale-line",
+    route: [
+        { name: "Patna", fair: 0 },
+        { name: "Danapur", fair: 160 },
+        { name: "Ara", fair: 320 },
+        { name: "Buxar", fair: 480 },
+        { name: "Mughalsarai Junction", fair: 640 },
+        { name: "Allahabad Junction", fair: 800 },
+        { name: "Satna", fair: 960 },
+        { name: "Katni", fair: 1120 },
+        { name: "Jabalpur", fair: 1280 },
+        { name: "Itarsi Junction", fair: 1440 },
+        { name: "Bhusaval Junction", fair: 1600 },
+        { name: "Kalyan Junction", fair: 1760 },
+        { name: "Dadar", fair: 1920 },
+        { name: "Mumbai Central", fair: 2080 },
+        { name: "Mumbai CST", fair: 2240 }
+    ]
+});
+
+
+
+db.routes.insert({
+    name: "puttalam-line",
+    route: [
+        { name: "Kolkata", fair: 0 },
+        { name: "Burdwan", fair: 100 },
+        { name: "Durgapur", fair: 200 },
+        { name: "Asansol", fair: 300 },
+        { name: "Ranchi", fair: 400 },
+        { name: "Bokaro Steel City", fair: 500 },
+        { name: "Rourkela", fair: 600 },
+        { name: "Vizianagaram", fair: 700 },
+        { name: "Vijayawada", fair: 800 },
+        { name: "Renigunta", fair: 900 },
+        { name: "Bangalore Cantonment", fair: 1000 },
+        { name: "Bengaluru City", fair: 1100 },
+        { name: "Bangalore", fair: 1200 }
+    ]
+});
+
+
+
+
+db.trains.insertMany([
+  { name: "Rajdhani Express", route: "main-line" },
+  { name: "Shatabdi Express", route: "main-line" },
+  { name: "Duronto Express", route: "main-line" },
+  { name: "Gatimaan Express", route: "main-line" },
+  { name: "Humsafar Express", route: "main-line" },
+  { name: "Tejas Express", route: "main-line" },
+  { name: "Garib Rath Express", route: "puttalam-line" },
+  { name: "Sampark Kranti Express", route: "puttalam-line" },
+  { name: "Mahanama Express", route: "matale-line" },
+  { name: "Vivek Express", route: "matale-line" }
+]);
+
+
+
+db.classes.insertMany([
+  { name: "1st class", fairRatio: 4 },
+  { name: "2nd class", fairRatio: 2 },
+  { name: "3rd class", fairRatio: 1 }
+]);
+
+
+
+db.schedules.insertMany([
+  { time: "05.00 am" },
+  { time: "06.00 am" },
+  { time: "09.30 am" },
+  { time: "10.00 am" },
+  { time: "10.30 am" },
+  { time: "11.00 am" },
+  { time: "12.00 pm" },
+  { time: "1.30 pm" },
+  { time: "02.00 pm" },
+  { time: "03.30 pm" },
+  { time: "04.00 pm" },
+  { time: "05.30 pm" },
+  { time: "07.00 pm" },
+  { time: "11.00 pm" }
+]);
+
+
+
+
+
+db.cards.insertMany([
+  { card: "1234123412341234", cvc: "123", exp: "12/12" },
+  { card: "1111111111111111", cvc: "111", exp: "11/11" }
+]);
+
+
+
+
+
+db.phones.insertMany([
+  { phone: "9999999999", pin: "1234" },
+  { phone: "1111111111", pin: "1234" }
+]);
+
+
+
+
+
+db.employees.insertMany([
+  {
+    "firstName": "Tenusha",
+    "lastName": "Guruge",
+    "nic": "123456789V",
+    "address": [
+      {"street": "a", "city": "b", "state": "c"},
+      {"street": "a1", "city": "b1", "state": "c1"}
+    ]
+  },
+  {
+    "firstName": "Ranmal",
+    "lastName": "Dewage",
+    "nic": "111111111V",
+    "address": [
+      {"street": "a", "city": "b", "state": "c"},
+      {"street": "a1", "city": "b1", "state": "c1"}
+    ]
+  },
+  {
+    "firstName": "Vimukthi",
+    "lastName": "Rajapaksha",
+    "nic": "222222222V",
+    "address": [
+      {"street": "a", "city": "b", "state": "c"},
+      {"street": "a1", "city": "b1", "state": "c1"}
+    ]
+  }
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
