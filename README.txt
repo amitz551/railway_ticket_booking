@@ -16,9 +16,6 @@ TRAIN_TICKET/train_booking/web   =>  npm start      (To run frontend)
 	
 	- Run the mongoDB and execute the code in "db-script.txt". (copy the content and paste to mongo.exe cmd)
 	
-	- "db-script.txt" file mainly contains railway routes, credit card and mobile phone details (user payment details validated with this data)
-	  
-	  and government employee data.
 	- database name should be "railway" and database creation is also included in "db-script.txt"		
 
 
@@ -51,3 +48,9 @@ TRAIN_TICKET/train_booking/web   =>  npm start      (To run frontend)
 
 
 5) Then you are ready to use the web application. (localhost:3000)
+
+
+Github basic commands to run each time
+-> git add .
+-> git commit -m "readme file changed"
+-> git push -u origin main
