@@ -1,4 +1,4 @@
-----Steps to Deploy----
+----Step up to Deploy----
 
 
 ##Run the program
